@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:/cosmocc/**",
+                "C:/cosmocc"
+            ],
+            "compilerPath": "C:/cosmocc/bin/x86_64-pc-linux-gnu-gcc.exe",
+            "cStandard": "c11",
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "C:/cosmocc/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "compilerArgs": [
+                "-static",
+                "-fno-pie",
+                "-no-pie",
+                "-mno-red-zone",
+                "-fno-omit-frame-pointer",
+                "-nostdlib",
+                "-nostdinc",
+                "-Wl,--gc-sections",
+                "-Wl,-z,max-page-size=0x1000",
+                "-fuse-ld=bfd"
+            ]
+        }
+    ],
+    "version": 4
+}
